@@ -1,0 +1,10 @@
+OFFSET FETCH QUERY
+    --to fetch the limited data from the tables.
+    
+    SELECT * from Account ORDER BY accountNumber Desc OFFSET i  rows fetch Next 5 rows only;
+    
+    note : we can use this query to fetch the data in batches from the db.
+    
+    
+    
+    
