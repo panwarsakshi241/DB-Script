@@ -5,6 +5,12 @@ OFFSET FETCH QUERY
     
     note : we can use this query to fetch the data in batches from the db.
     
+----------------------------------------------------------------------------------------------
+Postgres Queries:-   
     
-    
+SELECT * FROM "ITransactionInfo" where "TranId"='3abb7ad1650011ed9b06000d3ac4a164';
+
+SELECT * FROM "IWireAdviceDetails" where "AdviceReference"='3aa708f5650011ed9a48000d3ac4a164'
+
+SELECT trans."AccountNo", trans."TranId", wires."AdviceReference" FROM "ITransactionInfo" as "trans" INNER JOIN "IWireAdviceDetails" as "wires" ON trans."AdviceReference" = wires."AdviceReference"
     
